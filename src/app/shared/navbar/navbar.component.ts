@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-
+  menuActive: boolean = false;
+  toggleMenu() {
+    this.menuActive = !this.menuActive;
+  }
+  closeMenu() {
+    this.menuActive = false;
+  }
 }

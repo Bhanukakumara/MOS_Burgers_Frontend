@@ -4,12 +4,18 @@
       <span>MOS Burgers</span>
     </div>
   
-    <ul class="navbar-links">
-      <li><a routerLink="/home">Home</a></li>
-      <li><a routerLink="/food-items">Food Items</a></li>
-      <li><a routerLink="/orders">Orders</a></li>
-      <li><a routerLink="/customers">Customers</a></li>
-      <li><a routerLink="/reports">Reports</a></li>
+    <div class="menu-toggle" (click)="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+    <ul class="navbar-links" [class.active]="menuActive">
+      <li><a routerLink="/home" (click)="closeMenu()">Home</a></li>
+      <li><a routerLink="/food-items" (click)="closeMenu()">Food Items</a></li>
+      <li><a routerLink="/orders" (click)="closeMenu()">Orders</a></li>
+      <li><a routerLink="/customers" (click)="closeMenu()">Customers</a></li>
+      <li><a routerLink="/reports" (click)="closeMenu()">Reports</a></li>
     </ul>
   
     <div class="navbar-actions">
