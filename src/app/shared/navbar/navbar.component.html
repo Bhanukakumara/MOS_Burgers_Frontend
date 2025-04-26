@@ -1,25 +1,21 @@
-<nav class="navbar">
-    <div class="navbar-logo">
-      <img src="assets/logo.png" alt="MOS Burgers" />
-      <span>MOS Burgers</span>
-    </div>
-  
-    <div class="menu-toggle" (click)="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-
-    <ul class="navbar-links" [class.active]="menuActive">
-      <li><a routerLink="/home" (click)="closeMenu()">Home</a></li>
-      <li><a routerLink="/food-items" (click)="closeMenu()">Food Items</a></li>
-      <li><a routerLink="/orders" (click)="closeMenu()">Orders</a></li>
-      <li><a routerLink="/customers" (click)="closeMenu()">Customers</a></li>
-      <li><a routerLink="/reports" (click)="closeMenu()">Reports</a></li>
+<!-- header -->
+<header>
+    <a href="#" class="logo">
+      <img src="assets/logo.png" alt="" />
+    </a>
+    <ul class="navlist">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="#">Feature</a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
-  
-    <div class="navbar-actions">
-      <button class="btn-login">Login</button>
+    <div class="nav-content">
+      <a href="#"><i class="ri-search-line"></i></a>
+      <a href="#"><i class="ri-user-line"></i></a>
+      <a href="#"><i class="ri-heart-line"></i></a>
+      <a href="#"><i class="ri-shopping-bag-line"></i></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
     </div>
-  </nav>
-  
+  </header>
