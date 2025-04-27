@@ -1,0 +1,55 @@
+<!-- admin-dashboard.component.html -->
+<div class="admin-container">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <ul>
+      <li><a routerLink="/admin">Dashboard</a></li>
+    </ul>
+    <hr>
+    <ul>
+      <li>
+        <a routerLink="/add-new">Add New Customer</a>
+      </li>
+      <li>
+        <a routerLink="/edit-customer"
+          >Edit Customer</a
+        >
+      </li>
+      <li>
+        <a routerLink="/all-customers"
+          >All Customers</a
+        >
+      </li>
+    </ul>
+    <hr>
+    <ul>
+      <li>
+        <a routerLink="/admin" >Add New Product</a>
+      </li>
+      <li><a routerLink="/admin">Edit Product</a></li>
+      <li><a routerLink="/admin">All Products</a></li>
+    </ul>
+    <hr>
+    <ul>
+      <li>
+        <a routerLink="/admin">View All Orders</a>
+      </li>
+    </ul>
+    <hr>
+    <ul>
+      <li>
+        <a routerLink="/admin">Add New Product</a>
+      </li>
+      <li><a routerLink="/admin">Edit Product</a></li>
+      <li>
+        <a routerLink="/order-crud">All Products</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="content">
+    <router-outlet></router-outlet>
+    <!-- This is where the components will be displayed -->
+  </div>
+</div>
